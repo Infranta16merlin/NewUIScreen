@@ -39,7 +39,7 @@
   
   .searchbar-closed {
       height: 600px;
-    width: 67px;
+    width: 215px;
     position: absolute;
     background-color: beige;
     overflow-x: hidden;
@@ -58,7 +58,7 @@
   }
   .sidebar-closed {
       height: 600px;
-    width: 67px;
+    width: 146px;
     position: relative;
     background-color: #111;
     overflow-x: hidden;
