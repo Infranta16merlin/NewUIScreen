@@ -1,0 +1,406 @@
+ <!DOCTYPE html>
+<html>
+<title>UI Sceens</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="myStyle.css">
+
+<body>
+
+   
+
+<div class="main-bar">
+  <div class="sidebar" style="display:none" id="mySidebar">
+    <div style="display: flex;justify-content: space-between;position: relative;top: -6%;">
+      <h3 style="color: white;"><b>Logo</b></h3>
+      <button onclick="w3_close()" style="margin-top: 18px;margin-bottom: 16px;margin-right: 6px;"><</button>
+    </div>
+  
+  <h3><b style="color: #fff;"><i  class="fa fa-fw fa-user"></i>John</b></h3>
+  <h4><b style="color: #fff;">Main</b></h4>
+  <div style="position: relative;top: -4%;right: 12%;">
+    
+    <a href="#home"><i class="fa fa-fw fa-home"></i> Dashboard</a>
+    <a href="#services"><i class="fa fa-fw fa-wrench"></i> Alerts</a>
+    <a href="#clients"><i class="fa fa-fw fa-user"></i> Repots</a>
+
+  </div> <h4><b style="color: #fff;">People</b></h4>
+  <div style="position: relative;top: -4%;right: 12%;">
+    <a href="#clients"><i class="fa fa-fw fa-user"></i> Groups</a>
+    <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Members</a>
+
+  </div>
+
+  <h3 style="color: #fff;"><i class="fa fa-gear"></i>Logout</h3>
+
+  
+ 
+ 
+  
+</div>
+
+<!-- Page Content  -->
+ <div class="sidebar-closed">
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()" >></button>
+ 
+  <h3><i class="fa fa-fw fa-home"  style="color: white;"></i></h3> 
+  <h3><i class="fa fa-fw fa-wrench"  style="color: white;"></i> </h3> 
+   <h3> <i class="fa fa-fw fa-user"  style="color: white;"></i> </h3>
+   <h3><i class="fa fa-fw fa-envelope"  style="color: white;"></i></h3>
+   <h3><i class="fa fa-bar-chart"  style="color: white;"></i></h3>
+  
+</div>
+
+<div class="searchbar" style="display:none" id="searchbar">
+  <div style="display: flex;justify-content: space-between;position: relative;top: -6%;">
+    <h3><b>Members</b></h3>
+    <h3> <i class="fa fa-fw fa-user"></i> </h3>
+    <h3><i class="fa fa-fw fa-envelope"></i></h3>
+
+    <button onclick="search_close()" style="margin-top: 18px;margin-bottom: 16px;margin-right: 6px;"><</button>
+
+  </div>
+    <div style="display: flex;justify-content: space-between;">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>  
+    </div>
+    <p>Sort by a-z Distance Group Name</p>
+    <div>
+      <select name="texas" id="texas" style="position: relative;left: 4%;" >
+        <option value="day">Teaxs</option>
+        <option value="mon">Monday</option>
+        <option value="tue">Tuesday</option>
+        <option value="wed">Wednesday</option>
+      </select>
+
+    </div>
+
+    <div>
+      <select name="city" id="city" style="position: relative;left: 4%;margin-top: 7%;" >
+        <option value="day">City</option>
+        <option value="mon">Monday</option>
+        <option value="tue">Tuesday</option>
+        <option value="wed">Wednesday</option>
+      </select>
+
+    </div>
+
+    <div>
+      <select name="group" id="group" style="position: relative;left: 4%;margin-top: 7%;" >
+        <option value="day">Group</option>
+        <option value="mon">Monday</option>
+        <option value="tue">Tuesday</option>
+        <option value="wed">Wednesday</option>
+      </select>
+
+    </div>
+    <button class="btn">Apply</button>
+
+    <div style="position: relative;left: 2%;">
+      <h4><b>Depedents</b></h4> 
+      <div class="input-box">
+        <p>John <i class="fa fa-male"></i></p> 
+        <p style="position: relative;left:39%;">Active</p>
+       </div> 
+       <div class="input-box">
+        <p>John <i class="fa fa-female"></i></p> 
+        <p style="position: relative;left:39%;">Active</p>
+        
+       </div> 
+       </div>
+
+    
+  
+</div>
+
+<!-- Page Content  -->
+ <div class="searchbar-closed">
+  <button class="w3-button w3-teal w3-xlarge" onclick="search_open()">></button>
+  
+ 
+  <h3><i class="fa fa-search"></i></h3> 
+  
+  
+</div> 
+
+  </div>
+
+  
+
+      <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Profile')" id="defaultOpen">Profile</button>
+  <button class="tablinks" onclick="openCity(event, 'Reports')">Reports</button>
+</div>
+
+<div id="Profile" class="tabcontent">
+  <h5>Please read the following conditions and the user agreement terms and conditions</h5>
+  <hr/>
+  <table style="width:100%">
+    <tr>
+      <th>UNIQUE ID</th>
+      <th>Member ID</th> 
+      <th>Group No</th>
+      <th>Status</th>
+      <th>Deactivation Date</th>
+    </tr>
+    <tr>
+      <td>123456</td>
+      <td>12345678</td>
+      <td>D45654</td>
+      <td>Active</td>
+      <td>12-08-2020</td>
+    </tr>
+  </table>
+  <h3><b>Member Details</b></h3>
+  <div class="input-box">
+    <label for="fname" style="margin-right: 1%;">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." style="margin-right: 2%;">
+    <label for="mname" style="margin-right: 1%;" >Middle Name</label>
+    <input type="text" id="fname" name="Middlename" >
+    <label for="mname" style="margin-left: 1%;">Last Name</label>
+    <input type="text" id="lname" name="Lastname" style="left: 2%;position: relative;" >
+</div>
+<div class="input-box" style="padding-top: 2%;">
+  <label for="gender">Gender</label>
+  <select name="gender" id="gender" class="select-option">
+    <option value="select">Select a gender</option>
+    <option value="female">Female</option>
+    <option value="male">Male</option>
+    <option value="no">Not Disclosed</option>
+  </select>
+  <div style="position: relative;left: 12%;">
+    <label for="birthdate" style="margin-right:5% ;">Birthdate</label>
+    <select name="month" id="month" class="select-option" style="width: 22%;margin-left: 2%;">
+      <option value="month">Month</option>
+      <option value="jan">January</option>
+      <option value="feb">Feburary</option>
+      <option value="March">March</option>
+    </select>
+    <select name="day" id="day" style="position: relative;left: 4%;width: 20%;" >
+      <option value="day">Day</option>
+      <option value="mon">Monday</option>
+      <option value="tue">Tuesday</option>
+      <option value="wed">Wednesday</option>
+    </select>
+    <select name="year" id="year" style="position: relative;left: 4%;" >
+      <option value="year">Year</option>
+      <option value="2020">2020</option>
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+    </select>
+
+  </div>
+  <div style="position: relative;left: 11%;">
+    <label for="language">Preferred Language</label>
+  <select name="language" id="language" class="select-option">
+    <option value="select">English</option>
+    <option value="tamil">Tamil</option>
+    <option value="others">Others</option>
+    <option value="no">Not Disclosed</option>
+  </select>
+
+  </div>
+
+  
+  
+ 
+</div>
+
+<div class="card">
+  <div class="container">
+    <div class="input-box">
+      <div>
+        <h4><b>Contact Details</b></h4> 
+        <label for="email" style="margin-right: 5%;">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email.." style="width: 81%;">
+        <div style="padding-top: 2%;">
+          <label for="Primary Phase">Primary Phase</label>
+        <input type="text" id="primary" name="primary" placeholder="()">
+        <label for="email">Secondary Phase</label>
+        <input type="text" id="secondary" name="secondary" placeholder="()">
+        </div>
+        <div style="padding-top: 2%;">
+          <label for="Address 1" style="margin-right: 3%;">Address 1</label>
+        <input type="text" id="address1" name="address1" style="width: 78%;">
+        </div>
+        <div style="padding-top: 2%;">
+        <label for="Address 2" style="margin-right: 3%;">Address 2</label>
+        <input type="text" id="address2" name="address2" style="width: 78%;">
+        </div>
+        <div style="padding-top: 2%;">
+          <label for="city">City</label>
+        <input type="text" id="city" name="city" placeholder="Enter City">
+        <label for="state">State</label>
+        <input type="text" id="state" name="state" placeholder="Enter State">
+        <label for="zip">Zip</label>
+        <input type="text" id="zip" name="zip" style="width: 21%;" placeholder="Enter Zipcode">
+        </div>
+
+      </div>
+      <div style="position: relative;left: 2%;">
+        <h4><b>Depedents</b></h4> 
+        <div class="input-box">
+          <p>John <i class="fa fa-male" aria-hidden="true"></i></p> 
+          <p style="position: relative;left: 76%;">Active</p>
+          
+         </div> 
+         <button>Edit Dependent</button>
+
+         <div class="input-box">
+          <p>Quincy <i class="fa fa-female" aria-hidden="true"></i></p> 
+          <p style="position: relative;left: 60%;">Active</p>
+          
+         </div> 
+         <button>Edit Dependent</button>
+
+      </div>
+      
+
+      
+
+
+    </div>
+    <hr/>
+    <div class="input-box">
+      <div>
+        <h4><b>Package Details</b></h4> 
+        <div class="input-box">
+          <div>
+            <p>Group Cost</p>
+            <p> $12.45</p>
+          </div>
+          <div style="position: relative;left: 100%;">
+            <p>Member Cost</p>
+            <p> $12.45</p>
+          </div>
+          </div>
+
+          <div class="input-box">
+            <div>
+              <p>Affliated code</p>
+              <input type="text" id="zip" name="zip">
+              
+            </div>
+            <div style="position: relative;left: 66%;">
+              <p>Payment Method</p>
+              <p> Last Bill Summary</p>
+            </div>
+            </div>
+            <div>
+              <p>Select Benefit Package</p>
+              <p>Member Benefit Pacakge</p>
+              <button>Change Member Package</button>
+              
+            </div>
+        </div>
+    
+
+        <div style="position: relative;left: 40%;">
+          <h4><b>Benefits</b></h4> 
+          <table style="width:100%">
+            <tr>
+              <th><h4><i class="fa fa-fw fa-envelope"></i>Hearing Aids</h4></th>
+            </tr>
+            <tr>
+              <th><h4><i class="fa fa-fw fa-envelope"></i>Hearing Aids</h4></th>
+            </tr>
+          </table>
+  
+        </div>
+      
+
+
+      
+     
+    </div>
+    <hr/>
+  
+    <div>
+      <h4><b>Benefit Card Details</b></h4> 
+      <div class="input-box">
+        <div>
+          <p>Card Print Date</p>
+          <p> 12-09-2020</p>
+        </div>
+        <div style="position: relative;left: 30%;">
+          <p>Card Ship Date</p>
+          <p> 20-09-2020</p>
+        </div>
+        </div>
+
+        <div class="input-box">
+          <div>
+            <p>Deactivation Date</p>
+            <p> 20-09-2026</p>
+            
+          </div>
+          <div style="position: relative;left: 30%;">
+            <p>Effective Date</p>
+            <p> 2-10-2020</p>
+          </div>
+          </div>
+          <div>
+            <p>Deactvation Date</p>
+            <p>22-10-2020</p>
+            
+          </div>
+      </div>
+
+
+  </div>
+</div>
+</div>
+
+<div id="Reports" class="tabcontent">
+  <h3>Reports</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+
+
+
+
+<script>
+  function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function search_open() {
+   document.getElementById("searchbar").style.display = "block";
+}
+
+function search_close() {
+  document.getElementById("searchbar").style.display = "none";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 
+
